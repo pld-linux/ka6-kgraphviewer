@@ -15,14 +15,23 @@ Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kan
 # Source0-md5:	0975c8a6c5d018ab505e1906649dc9af
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
-BuildRequires:	Qt6Gui-devel
-BuildRequires:	Qt6PrintSupport-devel
-BuildRequires:	Qt6Svg-devel
-BuildRequires:	Qt6Widgets-devel
+BuildRequires:	Qt6DBus-devel >= %{qtver}
+BuildRequires:	Qt6PrintSupport-devel >= %{qtver}
+BuildRequires:	Qt6Qt5Compat-devel >= %{qtver}
+BuildRequires:	Qt6Svg-devel >= %{qtver}
+BuildRequires:	Qt6Widgets-devel >= %{qtver}
+BuildRequires:	boost-devel >= 1.36
+BuildRequires:	cmake >= 3.16
 BuildRequires:	gettext-tools
-BuildRequires:	graphviz-devel
+BuildRequires:	graphviz-devel >= 2.30.0
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
+BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
+BuildRequires:	kf6-kdoctools-devel >= %{kframever}
+BuildRequires:	kf6-ki18n-devel >= %{kframever}
+BuildRequires:	kf6-kparts-devel >= %{kframever}
+BuildRequires:	kf6-kwidgetsaddons-devel >= %{kframever}
 BuildRequires:	ninja
+BuildRequires:	pkgconfig
 BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	shared-mime-info
