@@ -19,7 +19,7 @@ BuildRequires:	Qt6Gui-devel
 BuildRequires:	Qt6PrintSupport-devel
 BuildRequires:	Qt6Svg-devel
 BuildRequires:	Qt6Widgets-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	graphviz-devel
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	ninja
